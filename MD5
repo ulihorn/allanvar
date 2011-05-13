@@ -1,0 +1,15 @@
+3afdd2d3cae41e72e0b647d34d62549d *DESCRIPTION
+bb91fd7534f1855c18e954e279e9cac6 *NAMESPACE
+b9d83011eed8f2bc94f725140b6848a8 *R/avar.R
+d2a78e542757993d3708f0b21ad4bd8b *R/avari.R
+9631c3f2dc78514ca52c2f73f0bf92aa *R/avarn.R
+9a55e98fb4a59b51e2b67d3a52b54214 *R/plotav.R
+82e2f0747f558bc4071679374affa8f6 *data/gyroz.rda
+677e92f18694be66e1fdba0c9cc4305f *demo/00Index
+43881f3c1bf5e118fc77e68b0df85fe5 *demo/allanvar.R
+482f3c5f9a72b7d8e5271862932e756b *man/allanvar-package.Rd
+fe8b237ecb0f8217335947b0cd39073c *man/avar.Rd
+a10d9280b3d2a77988697a79e3e8d61e *man/avari.Rd
+810a32dbabb45819fe048d7914c26eb1 *man/avarn.Rd
+7a038ff4342a48fde3a34a0c75539414 *man/gyroz.Rd
+f5594cc87ca995393e681217fd383fb7 *man/plotav.Rd
