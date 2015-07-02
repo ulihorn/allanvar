@@ -37,7 +37,15 @@ plotav <- function (avdf)
   library(gplots)
   
   #Plot Error Bars and Confidence Intervals
-  plotCI(x= avdf$time, y=sqrt(avdf$av), uiw =  sqrt(avdf$av)*avdf$error, gap=0, lty = 1, xaxt="n", yaxt="n", col="blue", log="xy", lwd=1,  xlab="", ylab="")
+  barwidth=0.040*x
+  delta <- sqrt(avdf$av)*avdf$error
+  x= avdf$time
+  y= sqrt(avdf$av)
+  plot(x=x, y=y, lty=1, xaxt="n", yaxt="n", cex=.3, col="blue", log="xy", lwd=1,  xlab="", ylab="")
+  segments(x,y-delta,x,y+delta)
+  segments(x-barwidth,y+delta,x+barwidth,y+delta)
+  segments(x-barwidth,y-delta,x+barwidth,y-delta)
+  #plotCI(x= avdf$time, y=sqrt(avdf$av), uiw =  sqrt(avdf$av)*avdf$error, gap=0, lty = 1, xaxt="n", yaxt="n", col="blue", log="xy", lwd=1,  xlab="", ylab="")
   #plotCI(x= avdf$time, y=sqrt(avdf$av), uiw =  sqrt(avdf$av)*avdf$error, gap=0, lty = 1, xaxt="n", yaxt="n", col="blue", lwd=1,  xlab="", ylab="")
   #Plot the line
   lines (avdf$time,sqrt(avdf$av), col="blue")
