@@ -37,10 +37,10 @@ plotav <- function (avdf)
   library(gplots)
   
   #Plot Error Bars and Confidence Intervals
-  barwidth=0.040*x
-  delta <- sqrt(avdf$av)*avdf$error
   x= avdf$time
   y= sqrt(avdf$av)
+  barwidth=0.040*x
+  delta <- sqrt(avdf$av)*avdf$error
   plot(x=x, y=y, lty=1, xaxt="n", yaxt="n", cex=.3, col="blue", log="xy", lwd=1,  xlab="", ylab="")
   segments(x,y-delta,x,y+delta)
   segments(x-barwidth,y+delta,x+barwidth,y+delta)
